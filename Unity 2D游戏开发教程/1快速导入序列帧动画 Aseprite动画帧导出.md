@@ -1,7 +1,5 @@
 ### 如何在Unity中快速导入序列帧动画 Aseprite动画帧导出
 
-![](C:\Users\goodboy\Pictures\Screenshots\QQ图片20241216140958.png
-
 ![image-20241216141619795](Images.assets/image-20241216141619795.png)
 
 
