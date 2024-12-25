@@ -2,7 +2,7 @@
 
 
 
-![image-20241219175649630](C:\Users\goodboy\AppData\Roaming\Typora\typora-user-images\image-20241219175649630.png)
+![image-20241219175649630](Images.assets/image-20241219175649630.png)
 
 ```c#
 public class PlayerController : MonoBehaviour

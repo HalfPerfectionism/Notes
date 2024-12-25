@@ -1,8 +1,8 @@
 ##### # 2如何在Unity中实现Player左右移动 2D Movement
 
-![image-20241217164123624](C:\Users\goodboy\AppData\Roaming\Typora\typora-user-images\image-20241217164123624.png)
+![image-20241217164123624](Images.assets/image-20241217164123624.png)
 
-![image-20241217164512073](C:\Users\goodboy\AppData\Roaming\Typora\typora-user-images\image-20241217164512073.png)、![image-20241217164941140](C:\Users\goodboy\AppData\Roaming\Typora\typora-user-images\image-20241217164941140.png)
+![image-20241217164512073](Images.assets/image-20241217164512073.png)、![image-20241217164941140](Images.assets/image-20241217164941140.png)
 
 给Player添加脚本PlayerController
 

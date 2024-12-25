@@ -1,6 +1,6 @@
 #### 如何在Unity中实现Player移动时Idle和Run动画切换
 
-![image-20241217181223022](C:\Users\goodboy\AppData\Roaming\Typora\typora-user-images\image-20241217181223022.png)
+![image-20241217181223022](Images.assets/image-20241217181223022.png)
 
 
 
