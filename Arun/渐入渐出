@@ -1,0 +1,59 @@
+![image-20250507102946889](resource/image-20250507102946889.png)
+
+
+
+```c#
+public class FadeCanvas : MonoBehaviour
+{
+    public Image fadeImage;
+    [Header("事件监听")]
+    public FadeEventSO fadeEvent;
+
+    private void OnEnable()
+    {
+        fadeEvent.OnRaisedEvent += OnFadeEvent;
+    }
+
+    private void OnDisable()
+    {
+        fadeEvent.OnRaisedEvent -= OnFadeEvent;
+    }
+
+    private void OnFadeEvent(Color target, float duration, bool fadeIn)
+    {
+        //用这个函数
+        fadeImage.DOColor(target, duration);
+    }
+}
+```
+
+
+
+在SO里完成事件广播
+
+```c#
+[CreateAssetMenu(menuName = "Event/FadeEventSO")]
+public class FadeEventSO : ScriptableObject
+{
+    public UnityAction<Color, float, bool> OnRaisedEvent;
+
+    //变白
+    public void FadeIn(float duration)
+    {
+        RaiseEvent(Color.black, duration, true);
+    }
+
+    //透明
+    public void FadeOut(float duration)
+    {
+        RaiseEvent(Color.clear, duration, false);
+    }
+
+    public void RaiseEvent(Color target, float duration, bool fadeIn)
+    {
+        OnRaisedEvent?.Invoke(target, duration, fadeIn);
+    }
+}
+
+```
+
